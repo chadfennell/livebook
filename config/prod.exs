@@ -3,7 +3,8 @@ import Config
 # For production, don't forget to configure the url host
 # to something meaningful, Phoenix uses this information
 # when generating URLs.
-config :livebook, LivebookWeb.Endpoint, http: [ip: {127, 0, 0, 1}, port: 8080]
+# RUN ME IN A CONTAINER
+config :livebook, LivebookWeb.Endpoint, http: [ip: {0, 0, 0, 0}, port: 8080]
 
 # The output is shown to the end user,
 # so limit the amount of information we show.
